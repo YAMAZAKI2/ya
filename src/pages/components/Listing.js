@@ -1,11 +1,8 @@
 import Image from 'next/image'
 import Styles from '@/styles/Listing.module.css'
-import battlefield from "../../../public/assests/BV.jpg"
-import Battlefield1 from "../../../public/assests/battlefield1.jpg"
+
 import Tale from "../../../public/assests/Tale.jpg"
-import Rise from "../../../public/assests/Rise.jpg"
-import Shadow from "../../../public/assests/shadow.jpg"
-import Spirit from "../../../public/assests/spirit.jpg"
+
 import Link from 'next/link'
 
 const Listing = () => {
