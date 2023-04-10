@@ -1,10 +1,9 @@
-import Head from 'next/head'
-import Header from '../Header'
-import Footer from '../Footer'
-import Image from 'next/image'
-import Tale from "../../../../public/assests/Tale.jpg"
-import Styles from '@/styles/Post.module.css'
-
+import Head from 'next/head';
+import Image from 'next/image';
+import Script from 'next/script';
+import Header from '../Header';
+import Footer from '../Footer';
+import Tale from '../../../../public/assests/Tale.jpg';
 
 const Apoi = () => {
  return (
@@ -16,29 +15,48 @@ const Apoi = () => {
     <link rel="icon" href="/favicon.ico" />
    </Head>
 
-
-
    <Header />
    <br />
    <br />
-   <main> <h1 >A Tale of Plague Innocence</h1>
+   <main>
+    <h1>A Tale of Plague Innocence</h1>
     <div>
-     <Image src={Tale} alt="battlefield" width={500} height={300} priority />
+     <Image src={Tale} alt="battlefield" width={500} height={300} priority  />
     </div>
 
     <h2>1. Plants and tree's branch collision detection problem: </h2>
-    <p>   In Chapter 4, "The Apprentice," of A Plague Tale: Innocence, an observation was made regarding a visual glitch. While walking on a constructed wooden platform over a river, plants appeared to pass through the platform. The plants seemed to be emerging from the river below and appearing on top of the platform, despite the wooden pallets being present. This same phenomenon was observed again when a tree branch appeared to pass through a rock fence. These observations suggest a possible issue with the game's programming and should be investigated further.
-
+    <p>
+     In Chapter 4, "The Apprentice," of A Plague Tale: Innocence, an observation was made regarding a visual glitch.
+     While walking on a constructed wooden platform over a river, plants appeared to pass through the platform. The
+     plants seemed to be emerging from the river below and appearing on top of the platform, despite the wooden
+     pallets being present. This same phenomenon was observed again when a tree branch appeared to pass through a
+     rock fence. These observations suggest a possible issue with the game's programming and should be investigated
+     further.
     </p>
     <br />
 
- 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/TP9seitsNHA" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" frameBorder="0"allowFullScreen></iframe>
+    <iframe
+     width="560"
+     height="315"
+     src="https://www.youtube.com/embed/TP9seitsNHA"
+     title="YouTube video player"
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+     frameBorder="0"
+     allowFullScreen
+    ></iframe>
+   </main>
 
-   </main >
    <Footer />
-  </>
- )
-}
 
-export default Apoi
+   <Script
+    src="https://example.com/third-party-script.js"
+    strategy="afterInteractive"
+    onLoad={() => {
+     console.log('Third-party script loaded!');
+    }}
+   />
+  </>
+ );
+};
+
+export default Apoi;
